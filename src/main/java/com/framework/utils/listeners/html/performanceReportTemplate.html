@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head><title>Allegis Performance Test Emailable Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		.jumbotron {
+		background-color: #c9740a;
+		color: #fff;
+	}
+	</style>
+</head>
+<body>
+	<div class="jumbotron text-center">
+		<h1>Performance Test Automation Report</h1>
+		<h2 id="projectTeam"></h2>
+		<h3 id="dateTimeStamp"></h3>
+	</div>
+	
+	<div class="container">
+		<h2> Test Execution Summary</h3>
+		<table class="table">
+			<thead>
+					<tr>
+						<th>Test Group Name</th>
+						<th># of Tests</th>
+						<th># Passed</th>
+						<th># Skipped</th>
+						<th># Failed</th>
+						<th>Execution Time</th>
+					</tr>
+			</thead>
+			<tbody id="suiteSummaryTable">
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="container">
+		<h2>Method Execution Average Time Details</h3>
+		<table class="table">
+		
+				<thead>
+				<tr>
+					<th>Test Group Name</th>
+					<th>Test Method</th>
+					<th>Test Method Count</th>
+					<th>Total Execution Time</th>
+					<th>Average Execution Time</th>
+				</tr>
+			</thead>
+			<tbody id="suiteAvgExecutionDetail">
+			</tbody>
+		</table>
+	</div>
+	
+		<div class="container">
+		<h2>Test Execution Average Time Details</h3>
+		<table class="table">
+		
+				<thead>
+				<tr>
+					<th>Test Group Name</th>
+					<th>Test Class</th>
+					<th>Test Method</th>
+					<th>Test Method Count</th>
+					<th>Execution Time </th>
+					<th>Average Execution Time </th>
+				</tr>
+			</thead>
+			<tbody id="suiteAvgDetailTable">
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="container">
+		<h2>Test Execution Details</h3>
+		<table class="table">
+			
+			<thead>
+				<tr>
+					<th>Test Group Name</th>
+					<th>Test Class</th>
+					<th>Test Method</th>
+					<th>Status</th>
+					<th>Failure Reason</th>
+					<th>Execution Time (secs)</th>
+				</tr>
+			</thead>
+			<tbody id="suiteDetailTable">
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+  <properties fileName="automation-framework.properties"  config-optional="true"/>
+  <properties fileName="automation-framework-defaults.properties"/>
+  <properties fileName="Config.properties"  config-optional="true"/>
+  <properties fileName="Config-defaults.properties"  config-optional="true"/>
+  <properties fileName="Credentials.properties"  config-optional="false"/>
+  <properties fileName="Credentials-defaults.properties"  config-optional="false"/>
+  <system/>
+  <env />
+</configuration>

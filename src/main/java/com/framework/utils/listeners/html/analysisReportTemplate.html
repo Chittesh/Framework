@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><title>Allegis Emailable Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		.jumbotron {
+		background-color: #DB9CFB;
+		color: black;
+	}
+	</style>
+</head>
+<body>
+	<div class="jumbotron text-center">
+		<h1>Allegis Automation Analysis</h1>
+		<h2 id="projectTeam"></h2>
+		<h3 id="dateTimeStamp"></h3>
+	</div>
+	
+	<div class="container">
+		<h2> Test Execution Summary</h3>
+		<table class="table">
+			<thead>
+					<tr>
+						<th bgcolor="#AFF4FA"><font color="black" size="4">Test Group Name</font></th>
+						<th bgcolor="#F9BC81"><font color="black" size="4"># of Tests</th>
+						<th bgcolor="#BEFBAC"><font color="black" size="4"># Passed</th>
+						<th bgcolor="#F7F380"><font color="black" size="4"># Skipped</th>
+						<th bgcolor="#FCA0A0"><font color="black" size="4"># Failed</th>
+						<th bgcolor="#BFBEFC"><font color="black" size="4">Execution Time</th>
+					</tr>
+			</thead>
+			<tbody id="suiteSummaryTable">
+			</tbody>
+		</table>
+	</div>
+		
+</body>
+</html>
