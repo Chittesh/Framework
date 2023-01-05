@@ -97,18 +97,19 @@ public class ExcelUtils {
 	}
 	
 	public static <R> R withSheet(String path, String sheetName, Function<XSSFSheet, R> function) {
-		try (FileInputStream excelFile = new FileInputStream(path);
-				XSSFWorkbook excelWBook = new XSSFWorkbook(excelFile) ) {
 
+		try {
+			FileInputStream excelFile = new FileInputStream(path);
+			XSSFWorkbook excelWBook = new XSSFWorkbook(excelFile);
 			XSSFSheet excelWSheet = excelWBook.getSheet(sheetName);
 			Validate.notNull(excelWSheet, "Refered sheet named [%s] does not exist in [%s].", sheetName, path);
 
 			return function.apply(excelWSheet);
-			
-		} catch (IOException e) {  
+
+		} catch (IOException e) {
 			LOGGER.error("Could not read the Excel sheet", e);
 			return rethrow(e);
-		} 
+		}
 	}
 
 	public String readExcelCell(int row, int col) {
